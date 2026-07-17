@@ -5,8 +5,6 @@ Last updated: 17 July 2026
 
 DSHOT Player ("DSHOT Player," "the App," "we," "us," or "our") is an Android music player developed by D HANSAJA. This Privacy Policy explains what information the App accesses, how that information is used and stored, when information is sent to third-party services, and the choices available to users.
 
-By installing or using DSHOT Player, you acknowledge this Privacy Policy. If you do not agree with this policy, do not use the App's online features.
-
 1. SUMMARY
 
 DSHOT Player is primarily a local music player. The App does not require a DSHOT account. Local music, playlists, favorites, playback history, equalizer settings, preferences, and on-device audio-analysis results are stored locally on the user's device. DSHOT Player does not upload local audio files to the developer and does not sell personal information.
