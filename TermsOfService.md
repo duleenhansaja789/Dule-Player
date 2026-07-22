@@ -1,9 +1,9 @@
 DSHOT PLAYER TERMS OF SERVICE
 
 Effective date: 17 July 2026
-Last updated: 17 July 2026
+Last updated: 22 July 2026
 
-These Terms of Service ("Terms") govern access to and use of DSHOT Player ("DSHOT Player," "the App," "we," "us," or "our"), an Android music player developed by D HANSAJA.
+These Terms of Service ("Terms") govern access to and use of DSHOT Player ("DSHOT Player," "the App," "we," "us," or "our"), an Android music and media player developed by D HANSAJA.
 
 Please read these Terms carefully. By installing, accessing, or using DSHOT Player, you agree to these Terms. If you do not agree, do not install or use the App.
 
@@ -15,7 +15,7 @@ DSHOT Player is a general-audience music application and is not directed specifi
 
 2. PURPOSE OF DSHOT PLAYER
 
-DSHOT Player provides local audio playback, library organization, playlists, favorites, listening history, equalizer and audio-effect controls, on-device music analysis, artwork and lyric lookup, online catalog search and playback, notifications, widgets, Trash management, ringtone or alarm-tone export, and an optional YouTube Video mode.
+DSHOT Player provides local audio playback, SMB network audio and video playback, library organization, playlists, favorites, listening history, equalizer and audio-effect controls, on-device music analysis, artwork and lyric lookup, online catalog search and playback, worldwide live-radio discovery and playback, notifications, widgets, Trash management, ringtone or alarm-tone export, and an optional YouTube Video mode.
 
 Features may vary according to the Android version, device hardware, available memory, permissions, network connection, third-party service availability, content format, region, and App version.
 
@@ -35,15 +35,17 @@ You may not:
 
 4. YOUR MUSIC AND CONTENT
 
-You retain ownership of audio files, playlists, edits, and other content that belongs to you. DSHOT Player does not acquire ownership of your local music.
+You retain ownership of audio files, video files, subtitles, playlists, edits, and other content that belongs to you. DSHOT Player does not acquire ownership of your local or network media.
 
-You are responsible for ensuring that you have the legal right to possess, play, organize, copy, export, or set any audio as a ringtone or alarm tone. DSHOT Player does not grant licences to copyrighted music merely because the App can access or play it.
+You are responsible for ensuring that you have the legal right to possess, access, play, organize, copy, stream on your private network, export, or set any audio as a ringtone or alarm tone. DSHOT Player does not grant licences to copyrighted audio or video merely because the App can access or play it.
 
 You must not use DSHOT Player to infringe copyright, distribute unauthorized copies, circumvent digital rights management, or otherwise violate intellectual-property rights.
 
 5. DEVICE PERMISSIONS AND FILE OPERATIONS
 
-Some features require Android permissions, including music and audio access, notifications, internet access, foreground media playback, and modify-system-settings access for user-requested ringtone or alarm actions.
+Some features require Android permissions, including music and audio access, notifications, internet access, foreground media playback, optional approximate-location access for radio-country detection, and modify-system-settings access for user-requested ringtone or alarm actions.
+
+Live Radio first attempts to suggest a country using the mobile network, SIM country, or phone region without requesting location. If the user chooses Improve, or if those signals are unavailable, DSHOT Player may explain and request approximate location to identify only the country and place its stations first. Precise and background location are not required. The user may skip or revoke location access and continue browsing radio stations from every available country.
 
 You may deny or revoke permissions, but related features may stop working. Android may display additional confirmation before files are modified, moved to Trash, restored, or permanently deleted.
 
@@ -51,9 +53,23 @@ File deletion is your responsibility. A permanent deletion action cannot be undo
 
 The Set As feature may create a new audio copy in the device's Ringtones or Alarms folder. You are responsible for that copy and may remove it through device storage controls.
 
+You may connect Network Library only to an SMB server, computer, or NAS that you own or are authorized to access. You are responsible for the server address, credentials, permissions, media and subtitle rights, administrator policies, backups, server maintenance, network security and charges. DSHOT Player uses read-only SMB2/SMB3 file access for browsing and playback, but cannot guarantee that a server, file, decoder, subtitle, connection or seek operation will always remain available.
+
+When the Network Library setup screen opens, DSHOT Player may check the current private Wi-Fi or Ethernet subnet for devices accepting SMB connections on port 445. This discovery does not send SMB credentials. You must not use discovery or manual connection to probe, access, disrupt or attempt authentication against networks or devices that you do not own or have permission to use.
+
+If Remember Password is selected, the credential is encrypted locally using Android Keystore. This reduces credential-extraction risk but does not make any device, server or network completely secure. If Remember Password is not selected, the credential is kept only for the current App process/session. You are responsible for protecting your phone, server account and NAS.
+
+SMB transport encryption depends on the server's SMB dialect and configuration. DSHOT Player does not promise end-to-end encryption for every SMB connection. Use Network Library only on a trusted network and enable SMB encryption and appropriate access controls on the server when needed.
+
+Network-video playback may use hardware decoding, software fallback supplied by the device, Picture-in-Picture, external subtitles and resume-position storage. Format, codec, subtitle, audio-track, frame-step, background-playback and Picture-in-Picture support varies by device and file. Brightness and system-volume gestures change device or activity settings at the user's direction. The App does not guarantee MX Player, VLC, FFmpeg or desktop-player compatibility with every file.
+
+Network Library is subject to a separate in-App consent screen. Declining that screen temporarily blocks this feature but does not block local music or other unrelated App features. Acceptance is stored locally and may be requested again when the Network Library terms or privacy disclosures materially change. You may withdraw practical consent by removing saved servers, clearing App storage, or uninstalling the App.
+
 6. ONLINE MUSIC, ARTWORK, LYRICS, AND METADATA
 
-Optional online features may use services such as Audius, Jamendo, Audiomack, MusicBrainz, Cover Art Archive, LRCLIB, YouTube, and Google. Search results, metadata, artwork, lyrics, streams, thumbnails, and other content are provided by their respective owners or service providers.
+Optional online features may use services such as Audius, Jamendo, Audiomack, MusicBrainz, Cover Art Archive, LRCLIB, Radio Browser, YouTube, and Google. Search results, metadata, artwork, lyrics, radio directories, streams, thumbnails, and other content are provided by their respective owners, broadcasters, or service providers.
+
+Live-radio availability information is community maintained and represents a recent automated check, not a permanent guarantee. Broadcasters may change, interrupt, geographically restrict, or discontinue a stream at any time. Radio content remains the responsibility of the broadcaster and applicable rights holders. A suggested radio country is a convenience based on device or approximate-location signals and may be missing or inaccurate; users can browse and select another country at any time.
 
 DSHOT Player does not guarantee that online content is accurate, complete, properly matched, continuously available, licensed for every use, or suitable for a particular purpose. Content may be changed, blocked, removed, region-restricted, age-restricted, interrupted, or unavailable without notice.
 
@@ -103,7 +119,7 @@ Use safe listening levels, reduce volume before enabling strong effects, and fol
 
 Your use of DSHOT Player is also governed by the DSHOT Player Privacy Policy, provided with the App or on the public project page as "PRIVACY_POLICY.txt."
 
-The Privacy Policy explains device permissions, local storage, on-device analysis, online service requests, YouTube API Services, embedded playback, retention, deletion controls, and contact information.
+The Privacy Policy explains device permissions, local storage, SMB discovery and credentials, network media access, on-device analysis, online service requests, YouTube API Services, embedded playback, retention, deletion controls, and contact information.
 
 12. OPEN-SOURCE COMPONENTS
 
@@ -142,7 +158,7 @@ Sections that by their nature should survive termination, including intellectual
 
 To the maximum extent permitted by applicable law, DSHOT Player is provided "AS IS" and "AS AVAILABLE," without warranties of any kind, whether express, implied, or statutory. This includes implied warranties of merchantability, fitness for a particular purpose, title, non-infringement, availability, accuracy, compatibility, and uninterrupted or error-free operation.
 
-The developer does not guarantee that the App will find every track, lyric, cover, stream, or video; that audio effects will work identically on every device; that online services will remain available; that files can always be restored; or that the App will be free from defects, interruptions, data loss, or security risks.
+The developer does not guarantee that the App will find or decode every track, lyric, cover, stream, subtitle, audio track, or video; that audio effects or video tools will work identically on every device; that local servers or online services will remain available; that files can always be restored; or that the App will be free from defects, interruptions, data loss, credential risk, or security risks.
 
 Nothing in these Terms excludes warranties or rights that cannot legally be excluded under applicable consumer law.
 
