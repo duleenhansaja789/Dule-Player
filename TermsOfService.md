@@ -1,8 +1,10 @@
 DULE TERMS OF SERVICE
 
-Effective date: 17 July 2026
-Last updated: 30 July 2026
-App version covered: 0.1.1
+Effective date: 15 August 2026
+Last updated: 15 August 2026
+App version covered: 0.2.0 (version code 7)
+
+IMPORTANT: This is a plain-text terms draft for the Dule release. It is not legal advice. Before publishing it on Google Play, the developer should confirm the legal developer name, business address, governing jurisdiction, and any required consumer-law wording.
 
 These Terms of Service ("Terms") govern access to and use of Dule ("Dule," "the App," "we," "us," or "our"), an Android music and media player developed by D HANSAJA.
 
@@ -18,7 +20,7 @@ Dule is a general-audience music application and is not directed specifically to
 
 2. PURPOSE OF DULE
 
-Dule provides local audio playback, SMB network audio and video playback, library organization, playlists, favorites, Listening Memory, transparent recommendation explanations, temporary same-Wi-Fi Dule Rooms with QR joining, equalizer and audio-effect controls, on-device music analysis, artwork and lyric lookup, online catalog search and playback, worldwide live-radio discovery and playback, notifications, widgets, Trash management, ringtone or alarm-tone export, Google Cast control for supported online media, Android Auto and paired Wear OS media controls, and an optional YouTube Video mode.
+Dule provides local audio playback, SMB network audio and video playback, library organization, playlists, favorites, Listening Memory, transparent recommendation explanations, Dule Fusion, Smart Bookmarks, Listening Safety estimates, Output Memory and headphone profiles, Library Doctor, natural-language playlist rules, accessibility controls, temporary same-Wi-Fi Dule Rooms with QR joining, equalizer and audio-effect controls, on-device music analysis, artwork and lyric lookup, online catalog search and playback, worldwide live-radio discovery and playback, notifications, widgets, Trash management, ringtone or alarm-tone export, Google Cast control for supported online media, Android Auto and paired Wear OS media controls, and an optional YouTube Video mode.
 
 Features may vary according to the Android version, device hardware, available memory, permissions, network connection, third-party service availability, content format, region, and App version.
 
@@ -132,11 +134,13 @@ Dule may analyze short decoded samples from a local media source using an on-dev
 
 These results are automated estimates. They may be incomplete, inaccurate, or unsuitable for professional audio mastering, medical, safety-critical, legal, or forensic use. Dule does not guarantee that a track, artist, lyric, artwork, video, mood, genre, rhythm, or audio-quality assessment will be correctly identified.
 
+Dule Fusion combines aggregate on-device Sound DNA profiles. A Fusion code is shared only at the user's direction, but anyone receiving a code may retain or redistribute it. Smart Bookmarks, Library Doctor results, recommendation explanations, and natural-language playlist rules are convenience tools and may be incomplete or inaccurate. Users should review generated playlists, duplicate or damaged-file suggestions, and any proposed library action before relying on them.
+
 10. AUDIO EFFECTS AND HEARING SAFETY
 
-Equalizer, compressor, enhancement, preamp, bass, treble, and volume-related features can change perceived loudness and frequency balance. Excessive volume or aggressive settings may cause distortion, damage speakers or headphones, or contribute to hearing injury.
+Equalizer, compressor, Auto Boost, enhancement, preamp, bass, treble, spatial, headphone-comfort, and volume-related features can change perceived loudness and frequency balance. Excessive volume or aggressive settings may cause distortion, damage speakers or headphones, or contribute to hearing injury. Auto Boost, headroom, limiter, live DSP monitor, clipping counter, and output-profile features reduce certain risks or provide information but cannot guarantee distortion-free playback or safe listening on every device, recording, speaker, headphone, or volume level.
 
-Use safe listening levels, reduce volume before enabling strong effects, and follow device and headphone safety guidance. You assume responsibility for audio settings you select.
+Use safe listening levels, reduce volume before enabling strong effects, take listening breaks, and follow device and headphone safety guidance. Listening Safety calculations are estimates based on locally available playback and volume information; they are not calibrated exposure measurements, medical advice, or a substitute for Android, device-manufacturer, workplace, or healthcare guidance. You assume responsibility for audio settings and listening levels you select.
 
 11. PRIVACY
 
@@ -207,21 +211,27 @@ These Terms may be updated when App features, connected services, legal requirem
 
 Continued use after updated Terms take effect constitutes acceptance where permitted by applicable law. If you do not agree to updated Terms, stop using and uninstall the App.
 
-20. GOVERNING LAW
+20. VIDEO MODE, SEARCH LIMITS AND CACHED CONTENT
+
+Video mode is an optional convenience feature that uses the visible YouTube embedded player. Search requests may be limited per device or by a provider quota and may change without notice. Dule may retain local video identifiers, thumbnails, metadata and playback positions, but it does not authorize downloading YouTube videos, extracting YouTube audio, hiding the official player, removing advertising, or bypassing YouTube controls. Any offline playback supported by Dule applies only to media the user has a lawful right to store and that the relevant provider permits; cached metadata is not a video licence.
+
+You must use YouTube features in accordance with the YouTube Terms of Service, YouTube API Services Terms, Developer Policies and applicable content-owner restrictions. Dule is not affiliated with, sponsored by, or endorsed by YouTube or Google.
+
+21. GOVERNING LAW
 
 These Terms are governed by the laws of Sri Lanka, without regard to conflict-of-law rules, except that users retain any mandatory consumer protections that apply in their country of residence. Any dispute must be brought before a court or other forum having lawful jurisdiction. Nothing in this section prevents either party from seeking urgent lawful relief or using a consumer dispute process available under applicable law.
 
-21. SEVERABILITY AND ENTIRE AGREEMENT
+22. SEVERABILITY AND ENTIRE AGREEMENT
 
 If a provision of these Terms is found unenforceable, the remaining provisions will continue in effect to the extent permitted by law. These Terms, the Privacy Policy, applicable open-source licences, and incorporated third-party terms form the agreement governing use of Dule.
 
 Failure to enforce a provision is not a waiver of that provision.
 
-22. CONTACT
+23. CONTACT
 
 Developer: D HANSAJA
 Application: Dule
-Contact email: dulhaara25@gmail.com
+Contact email: dule.hqofficial@gmail.com
 Project page: https://github.com/duleenhansaja789/DSHOT-Player
 
 Questions about these Terms may be sent to the email address above.
