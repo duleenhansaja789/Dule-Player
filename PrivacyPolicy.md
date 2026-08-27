@@ -1,8 +1,10 @@
 DULE PRIVACY POLICY
 
-Effective date: 17 July 2026
-Last updated: 30 July 2026
-App version covered: 0.1.1
+Effective date: 15 August 2026
+Last updated: 15 August 2026
+App version covered: 0.2.0 (version code 7)
+
+IMPORTANT: This is a plain-text policy draft for the Dule release. It is not legal advice. Before publishing it on Google Play, the developer should confirm the legal developer name, business address, contact details, governing jurisdiction, and the Play Console Data safety answers. The published policy must remain accurate if the App's data practices change.
 
 Dule ("Dule," "the App," "we," "us," or "our") is an Android music and media player developed by D HANSAJA. This Privacy Policy explains what information the App accesses, how that information is used and stored, when information is sent to third-party services, and the choices available to users.
 
@@ -20,7 +22,7 @@ When a user chooses an online feature, limited song metadata or search text may 
 
 With the user's permission, Dule may access:
 
-- Local audio files and, when a local-video feature is used, local video files and MediaStore records;
+- Local audio files and their MediaStore records;
 - Track title, artist, album, duration, bitrate, folder, date-added information, embedded artwork, and content URI;
 - Playback position, queue, play counts, listening history, favorites, playlists, ratings or preferences created in the App;
 - Timestamped Listening Memory events and locally calculated recommendation reasons and scores used by Transparent Intelligence;
@@ -33,6 +35,8 @@ With the user's permission, Dule may access:
 - Information required by Android to display media controls, playback notifications, widgets, Trash reminders, and ringtone or alarm-tone actions selected by the user;
 - Media information and commands exposed through Android's system media framework for Android Auto and paired Wear OS controls, including track title, artist, album, artwork, duration, playback position, queue, browse/search results, and play, pause, seek, previous, and next actions;
 - On-device diagnostics shown to the user, such as playback state, queue size, cache size, permission status, the most recent playback error and its time, and current device storage, memory, or processor-use estimates. Dule does not automatically send these diagnostics to the developer;
+- Live DSP measurements calculated from the decoded audio being played, including input and processed peak levels, sample rate, active-filter count, preamp/headroom values, limiter reduction, clipping counters, and processing status. These measurements are displayed temporarily in Sound Lab and are not transmitted to the developer;
+- Per-output sound-profile information used by Output Memory, including the Android-provided output type or device name and the equalizer, normalization, Auto Boost, and spatial-audio preferences associated with that output;
 - SMB server profiles supplied or selected by the user, including display name, server address, port, share, folder, username and optional domain. If Remember Password is enabled, the SMB password is encrypted using a key held by Android Keystore. If it is disabled, the password is retained only for the current App process/session. SMB credentials are not included in Dule backup exports or Android cloud backup; and
 - When Dule Rooms is explicitly used, the temporary room name and address, current track identifier, title, artist, playback position, duration, participant count, device model/name, protocol version, room chat messages, room queue, guest song requests and approval decisions, and—when LAN audio is needed—the bytes of an approved local audio file exchanged directly between room devices. While connected, each participant's Dule app reports the title and artist currently selected in Dule, whether it is playing or paused, and whether maker controls are allowed so the room maker can show live listening presence and the correct controls. The host can see each connected device's local IP address for identification and moderation. Guest IP addresses and listening presence are not intentionally redistributed to other guests. Personal seek position and equalizer state remain local.
 
@@ -61,6 +65,12 @@ The App may store the following information locally:
 
 - App settings and audio-effect preferences;
 - Favorites, playlists, queue information, play counts, listening history, snoozed recommendations, and playback-session information;
+- Smart Bookmarks containing a track identifier, track title, saved playback position, optional user label, and creation time;
+- Listening Safety estimates derived from local playback duration, system media-volume level, and recent high-volume exposure. These estimates are informational, stay on the device, and are not medical measurements;
+- Sound DNA summaries and Dule Fusion data. A Fusion code contains an aggregate preference profile rather than song titles or listening history; it leaves the device only when the user intentionally copies or shares it;
+- Output Memory and headphone-profile preferences associated with locally detected wired, Bluetooth, USB, speaker, or external output routes;
+- Library Doctor and integrity-monitor results, including locally detected missing files, duplicate candidates, weak or damaged media indicators, incomplete metadata, and broken playlist references;
+- User-written natural-language playlist rules and the local playlists generated from those rules; accessibility, font, contrast, and reduced-motion preferences;
 - Downloaded or cached lyrics and artwork;
 - Track-identification results and on-device audio-analysis results;
 - Selected YouTube video matches, including video ID, title, channel name, and thumbnail URL;
@@ -71,6 +81,8 @@ The App may store the following information locally:
 This information is used to operate the App, restore playback, personalize recommendations and Smart Shuffle, reduce repeated network requests, and improve track matching. Listening history can be disabled with Private Session or the Listening History setting. History, recommendations, downloaded artwork, and downloaded lyrics can be cleared using controls in the App.
 
 Listening Memory and Transparent Intelligence operate locally. Listening Memory uses timestamped play events to build a private timeline. Transparent Intelligence uses local play counts, favorites, and artist affinity to display why a song was recommended and a visible recommendation score. The developer does not receive these records through a Dule server.
+
+Dule Fusion, Smart Bookmarks, Listening Safety, Output Memory, Library Doctor, natural-language playlist rules, accessibility controls, and Sound Lab diagnostics operate locally. Dule Fusion creates an aggregate Sound DNA code that the user may choose to share with another person; Dule does not automatically upload or distribute that code. A recipient may retain any code the user shares. Live DSP meter values are short-lived interface state and are reset or replaced as playback changes.
 
 When the user hosts or joins a Dule Room, up to fifteen devices communicate directly over the same local network. The joining phone sends its device model/name, a random session identifier and supported room-protocol version; the host also observes the source local IP address supplied by the network connection. These details help identify participants, moderate requests and maintain compatibility. Dule Rooms first uses a matching local track on each device when one is available. If no match exists, Dule can stream an approved supported phone-local track directly from the phone that owns it through a temporary, token-protected LAN connection. A guest may explicitly request one of their local tracks; its title, artist, duration and temporary stream address are sent to the host, and audio becomes available to the room only after host approval. The receiving phone plays this stream without intentionally saving a permanent music-file copy. Online-provider, radio, SMB, and other unsupported sources are not re-streamed through this fallback. After joining, participants may independently select any track available to their own Dule app without changing the shared queue. While connected, the participant's current Dule track title, artist, play/pause state and maker-control permission are sent to and shown only to the room maker as live listening presence. When the participant permits it, the maker may send play, pause, previous, next or return-to-room-track commands to that participant's phone; supported versions return temporary delivery confirmations and safely deduplicate retries. Following a short network interruption, Dule may retry the same private-network room connection up to five times with increasing delays. The participant can disable maker controls or leave at any time. This presence and control channel stop when the participant leaves and are not a wider listening-history upload. Seek position and equalizer state remain on the participant's phone.
 
@@ -140,6 +152,7 @@ Depending on enabled features and service availability, Dule may communicate wit
 - YouTube and Google, for video search, thumbnails, embedded playback, and related services; and
 - Radio Browser, for the public country and station directory, station availability information, station artwork, stream URLs, and anonymous station-click accounting.
 - Google Play services, for Google Cast receiver discovery and control and the optional Dule Room QR-code scanner.
+- Google MediaPipe Tasks, for on-device audio classification. MediaPipe processes the decoded audio sample on the device and does not send that input audio to Google. The SDK may send technical performance and utilization metrics to Google under Google's privacy terms.
 
 Android Auto and paired Wear OS media controls are provided through Android's Media3 and system media-control framework. A compatible vehicle display, watch, phone, Google component, or device manufacturer may receive the current media metadata, artwork, queue, browse/search responses, and playback state needed to display and control Dule. Playback commands are returned to Dule through that framework. Dule does not operate a server for this integration and the developer does not receive vehicle identity, watch identity, route, driving information, health information, or commands used through these system surfaces. Android, Google, the vehicle system, watch, or device manufacturer may process diagnostic or interaction information under their own policies.
 
@@ -149,7 +162,7 @@ Each third-party service operates under its own terms and privacy policy. Dule d
 
 7. INFORMATION NOT COLLECTED BY THE DEVELOPER
 
-The current version of Dule does not include a developer-operated user account system, developer analytics, cloud listening-history storage, or active advertising. The developer does not receive the user's local audio files, playlists, listening history, on-device model results, or equalizer settings through a Dule server.
+The current version of Dule does not include a developer-operated user account system, developer analytics, cloud listening-history storage, or active advertising. The developer does not receive the user's local audio files, playlists, listening history, on-device model results, or equalizer settings through a Dule server. Third-party SDK technical metrics described above are not received through a Dule server.
 
 Dule does not sell or rent personal information.
 
@@ -194,11 +207,19 @@ Online service providers may process network requests in countries other than th
 
 This Privacy Policy may be updated when Dule's features, connected services, data practices, or legal requirements change. The effective date and last-updated date will be revised when changes are published. Material changes should be presented to users through the App, release notes, or the public project page as appropriate.
 
-14. CONTACT
+14. VERSION 0.2.0 FEATURE NOTES
+
+- Screen-off playback: Dule may use Android's foreground media-playback service and wake-lock behavior to keep an active track playing when the screen is off. This does not give the developer remote control of the device.
+- Sound Lab, equalizer, Dule Immersive Audio, compressor, bass, treble, limiter, Auto Boost, comfort listening and related DSP meters process playback locally. Meter values and effect settings are not uploaded to the developer.
+- Video mode uses a visible embedded YouTube player. Dule stores selected-video metadata and resume information locally to reduce repeated searches. Search requests may be subject to an App or provider quota. Cached metadata or ordinary audio cache must not be interpreted as an offline copy of a YouTube video.
+- Bug reports are user-initiated. Selecting Report a bug opens the device's email composer addressed to dule.hqofficial@gmail.com with the name, email address and issue text the user chooses to include. No report is sent until the user presses Send in their email app. Email providers may process the message under their own policies.
+- Offline screens only read the device's network state and show recovery controls. Tapping Network settings opens Android's system settings; Dule does not receive the user's Wi-Fi password.
+
+15. CONTACT
 
 Developer: D HANSAJA
 Application: Dule
-Contact email: dulhaara25@gmail.com
+Contact email: dule.hqofficial@gmail.com
 Project page: https://github.com/duleenhansaja789/DSHOT-Player
 
 For questions, complaints, or requests relating to this Privacy Policy or Dule's privacy practices, contact the developer using the email address above.
