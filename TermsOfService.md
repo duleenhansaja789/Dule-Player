@@ -1,14 +1,29 @@
-DULE TERMS OF SERVICE
+DULE PLAYER TERMS OF SERVICE
 
 Effective date: 15 August 2026
-Last updated: 15 August 2026
-App version covered: 0.2.0 (version code 7)
+Last updated: 16 October 2026
+App version covered: 0.3.25 (version code 33), including model-profile, speaker-preset and DJ-mode updates
 
-IMPORTANT: This is a plain-text terms draft for the Dule release. It is not legal advice. Before publishing it on Google Play, the developer should confirm the legal developer name, business address, governing jurisdiction, and any required consumer-law wording.
+Sound Lab loudness and true-peak readings are bounded real-time estimates, not certified
+laboratory measurements or full-file loudness analysis. Lookahead adds about five milliseconds
+of buffering. Optional model correction uses attributed AutoEq measurements and downloaded
+EQ profiles. Retired legacy selections are not silently reactivated. Catalog coverage is limited
+to available measured models and variants, not every branded product. Optional Bluetooth
+matching uses device-name identity hints; brand-only or uncertain matches retain general tuning.
+Profiles may not match your ear tips, ANC mode, hardware switches, fit or individual unit.
+Manufacturers do not endorse this App. Automatic output-aware tuning is based on available device
+information, not a verified measurement of an exact model or its acoustic capabilities.
+Deep-bass tuning cannot extend a speaker's physical capabilities or recreate lost codec detail.
+Bundled speaker presets are conservative Dule starting voicings grouped by speaker size,
+not individual measured-response corrections. Different models may share a starting voicing.
+Manufacturer information links identify products but do not validate or endorse Dule's EQ.
+Coverage is limited to supported models; a missing or ambiguous model retains general tuning.
+No claim is made that every branded Bluetooth device has a calibrated or optimized profile.
+No equivalence to Poweramp, JBL, Anker or any other proprietary engine or product is promised.
 
-These Terms of Service ("Terms") govern access to and use of Dule ("Dule," "the App," "we," "us," or "our"), an Android music and media player developed by D HANSAJA.
+These Terms of Service ("Terms") govern access to and use of Dule Player ("Dule Player," "Dule," "the App," "we," "us," or "our"), an Android music and media player developed by D HANSAJA.
 
-Dule was previously identified during development as "DSHOT Player" or "D Shot Player." Dule is the same Android API Client. This branding change does not change the App's package identifier (com.dshot.player), individual developer ownership, Google Cloud project, YouTube API use case, or these Terms. The public project URL may continue to contain the former DSHOT-Player repository name.
+Dule Player was previously identified during development as "DSHOT Player" or "D Shot Player." It is the same Android API Client. This branding change does not change the App's package identifier (com.dshot.player), individual developer ownership, Google Cloud project, YouTube API use case, or these Terms.
 
 Please read these Terms carefully. By installing, accessing, or using Dule, you agree to these Terms. If you do not agree, do not install or use the App.
 
@@ -92,7 +107,17 @@ Android Auto and paired Wear OS support use Android's system media framework. Co
 
 6. ONLINE MUSIC, ARTWORK, LYRICS, AND METADATA
 
+Supported non-Sinhala Dual translations may be reused from a private local cache. Clear cache or Clear downloaded lyrics removes cached translations but keeps downloaded language models; Android may evict cache entries and translations may need to be produced again. The first use of a language may require model downloads from Google. Wi-Fi and mobile-data downloads are allowed by default; the main mobile-data setting also controls metered-network downloads for Dual packs. The separate Wi-Fi-only artwork/lyric-lookup setting does not control these packs. Data charges may apply. Installed packs are shown in the language selector, and supported packs can be removed and downloaded again. Offline translation requires the relevant language models to remain available. Translation speed depends on the phone, network and model availability and is not guaranteed to be instant. Sinhala's existing online service remains separate and has no offline model pack in this App.
+
+When Scan on launch is off, Dule may display a saved local music-metadata snapshot. Use Rescan library to include newly added or changed files; a saved entry does not guarantee that its media is still present or readable. Imported fonts may lack glyphs, require system fallback or need re-importing after a device restore. Remember spatial preference saves an output preference and does not activate Android's system Spatial Audio. Android controls that system feature separately; Dule Immersive Audio remains an independent feature.
+
+The mobile-data setting restricts metered-network audio reads for Dule's online music and radio, including new queue items and network changes, and is also used by Dual translation and language-pack downloads. Data already requested, buffered or cached can remain available. This is not a device-wide data blocker and does not disable every other online feature; separate search, metadata, artwork, YouTube, Cast and LAN features have their own settings and provider behavior. Network charges remain the user's responsibility.
+
+The Now Playing lyrics controls are Original, Dual and Coach. Original displays source lyrics, Dual adds a translation where available, and Coach provides pronunciation assistance. Pronunciation is not a translation, and neither translations nor pronunciation guidance are guaranteed to be accurate or suitable for professional use. The separate Say control has been removed; a previously saved Say selection changes to Original. Original and Coach do not request Dual translations, but optional online lyric lookup and other enabled online features may still use a network connection.
+
 Optional online features may use services such as Audius, Jamendo, Audiomack, MusicBrainz, Cover Art Archive, LRCLIB, Radio Browser, YouTube, and Google. Search results, metadata, artwork, lyrics, radio directories, streams, thumbnails, and other content are provided by their respective owners, broadcasters, or service providers.
+
+When Dual translates lyrics to or from Sinhala, Dule's shared Cloudflare service forwards lyric lines to Microsoft's Azure Translator over the internet. Users can select Original instead of Dual to avoid sending lyric text for translation. Personal Azure keys are no longer used by the App. Translation may be inaccurate or unavailable when the service, network, or free quota is unavailable.
 
 Live-radio availability information is community maintained and represents a recent automated check, not a permanent guarantee. Broadcasters may change, interrupt, geographically restrict, or discontinue a stream at any time. Radio content remains the responsibility of the broadcaster and applicable rights holders. A suggested radio country is a convenience based on device or approximate-location signals and may be missing or inaccurate; users can browse and select another country at any time.
 
@@ -138,13 +163,31 @@ Dule Fusion combines aggregate on-device Sound DNA profiles. A Fusion code is sh
 
 10. AUDIO EFFECTS AND HEARING SAFETY
 
-Equalizer, compressor, Auto Boost, enhancement, preamp, bass, treble, spatial, headphone-comfort, and volume-related features can change perceived loudness and frequency balance. Excessive volume or aggressive settings may cause distortion, damage speakers or headphones, or contribute to hearing injury. Auto Boost, headroom, limiter, live DSP monitor, clipping counter, and output-profile features reduce certain risks or provide information but cannot guarantee distortion-free playback or safe listening on every device, recording, speaker, headphone, or volume level.
+Optional DJ mode starts the next supported local song before the current song ends; it does
+not deliberately insert a silent gap. The default overlap is ten seconds. Available local
+classification and rhythm/energy estimates can shorten it to six seconds for vocal-heavy or
+contrasting pairs, or extend it to fifteen seconds for compatible analyzed dance tracks.
+Known short songs cap the overlap at one quarter of their duration; tracks known to be under
+ten seconds use ordinary playback. Late activation may shorten an overlap. Preloading,
+temporary bass/volume handovers and original one-to-one-and-a-half-second transition sounds
+run on the phone. Transition sounds can be disabled separately. These automated estimates
+are not measured BPM/beat-grid or musical-key matching, a stem remix or a human DJ performance.
+Live radio, YouTube, remote casting and network streams are not DJ-mixed. Decoder limitations,
+unsupported tracks or heavy device load may cause ordinary playback instead of an overlap.
+Stop-after-current and repeat-one choices take priority. Use only music you are authorized to
+play; public-performance rights may differ from private-listening rights.
+
+Sound Lab changes decoded playback through local signal processing. It does not convert a low-bitrate recording into a genuine higher-bitrate source or restore information already lost in compression. Auto Boost temporarily applies an automatic sound curve without replacing the saved manual preset; turning it off restores the manual choice. Dule Immersive Audio is separately controlled, and Sound Lab's master switch governs enabled processing. When Output Memory is enabled, recognized outputs can restore their saved sound and immersive settings, including ambience, cinema bass and Auto Immersive. Android-supplied device names do not guarantee exact hardware identification, calibrated response, maximum device performance or identical results between outputs.
+
+Equalizer, compressor, Auto Boost, preamp, bass, treble, immersive stereo, headphone-comfort, and volume-related features can change perceived loudness and frequency balance. Excessive volume or aggressive settings may cause distortion, damage speakers or headphones, or contribute to hearing injury. Auto Boost, headroom, limiter, live DSP monitor, clipping counter, and output-profile features reduce certain risks or provide information but cannot guarantee distortion-free playback or safe listening on every device, recording, speaker, headphone, or volume level.
 
 Use safe listening levels, reduce volume before enabling strong effects, take listening breaks, and follow device and headphone safety guidance. Listening Safety calculations are estimates based on locally available playback and volume information; they are not calibrated exposure measurements, medical advice, or a substitute for Android, device-manufacturer, workplace, or healthcare guidance. You assume responsibility for audio settings and listening levels you select.
 
+"Immersive," "spatial," and similar descriptions refer to Dule Player's two-channel stereo widening, center-focus, crossfeed, and short-delay processing unless Android or the connected device separately provides a system spatializer. They do not promise discrete multichannel surround, object-based audio, or identical results across devices. Any third-party speaker or sound-system name used for comparison describes only a general listening target. Dule Player is not affiliated with, endorsed by, or an official sound profile of JBL, Harman, Anker, Soundcore, Poweramp or any other audio brand or player, and it does not claim to reproduce a particular physical product exactly.
+
 11. PRIVACY
 
-Your use of Dule is also governed by the Dule Privacy Policy, provided with the App or on the public project page as "PRIVACY_POLICY.txt."
+Data handling is described in the Dule Player Privacy Policy, available through the App's policy link and on the public project page as PrivacyPolicy.md. A plain-text copy is also provided as PRIVACY_POLICY.txt. Bug-report emails are sent only through the user's email app; optional diagnostics are added only when Include app diagnostics is enabled. Review the message before sending it.
 
 The Privacy Policy explains device permissions, local storage, SMB discovery and credentials, network media access, on-device analysis, online service requests, YouTube API Services, embedded playback, retention, deletion controls, and contact information.
 
@@ -152,7 +195,7 @@ The Privacy Policy explains device permissions, local storage, SMB discovery and
 
 Dule includes open-source software and model components. Those components remain subject to their respective licences and notices. If an open-source licence grants rights that conflict with these Terms, the open-source licence controls for that component.
 
-Applicable notices are available inside the App under About Dule and in the project's third-party notices.
+Applicable notices are available inside the App under About Dule Player and in the project's third-party notices.
 
 Interface translations, transliterations, synchronized lyrics, and user-selected fonts may be incomplete or may render differently across devices. Dule preserves Unicode text where supported, but does not guarantee a complete translation or glyph set for every language, script, track, or custom font.
 
@@ -160,7 +203,7 @@ Interface translations, transliterations, synchronized lyrics, and user-selected
 
 The App may be updated to add, change, suspend, or remove features; address security or legal requirements; maintain compatibility; comply with third-party policies; or respond to API changes.
 
-Some updates may be necessary for YouTube API Services, online catalogs, Android compatibility, playback, or security to continue working. The developer does not guarantee that every feature or older App version will remain available indefinitely.
+Some updates may be necessary for YouTube API Services, online catalogs, Android compatibility, playback, or security to continue working. The developer does not guarantee that every feature or older App version will remain available indefinitely. Smooth transitions, uninterrupted playback and feature-switching performance depend on device resources, operating-system restrictions and the media source; they are not a guarantee of zero lag on every phone.
 
 14. ACCEPTABLE USE
 
@@ -213,7 +256,7 @@ Continued use after updated Terms take effect constitutes acceptance where permi
 
 20. VIDEO MODE, SEARCH LIMITS AND CACHED CONTENT
 
-Video mode is an optional convenience feature that uses the visible YouTube embedded player. Search requests may be limited per device or by a provider quota and may change without notice. Dule may retain local video identifiers, thumbnails, metadata and playback positions, but it does not authorize downloading YouTube videos, extracting YouTube audio, hiding the official player, removing advertising, or bypassing YouTube controls. Any offline playback supported by Dule applies only to media the user has a lawful right to store and that the relevant provider permits; cached metadata is not a video licence.
+Video mode is an optional convenience feature that uses the visible YouTube embedded player. Search requests may be limited per device or by a provider quota and may change without notice. Dule may retain local video identifiers, thumbnails and metadata for no longer than 30 calendar days before deleting or refreshing that YouTube API Data. Video playback positions are Dule-created local preferences. Dule does not authorize downloading YouTube videos, extracting YouTube audio, hiding, covering or cropping the official player, removing advertising, or bypassing YouTube links or controls. Any offline playback supported by Dule applies only to media the user has a lawful right to store and that the relevant provider permits; saved metadata is not a video licence or a cached video.
 
 You must use YouTube features in accordance with the YouTube Terms of Service, YouTube API Services Terms, Developer Policies and applicable content-owner restrictions. Dule is not affiliated with, sponsored by, or endorsed by YouTube or Google.
 
@@ -232,7 +275,7 @@ Failure to enforce a provision is not a waiver of that provision.
 Developer: D HANSAJA
 Application: Dule
 Contact email: dule.hqofficial@gmail.com
-Project page: https://github.com/duleenhansaja789/DSHOT-Player
+Project page: https://github.com/duleenhansaja789/Dule-Player
 
 Questions about these Terms may be sent to the email address above.
 
